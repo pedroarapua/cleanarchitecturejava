@@ -1,0 +1,14 @@
+version: '3'
+services:
+  mysql:
+    container_name: 'cleanarchitecturejava-mysql'
+    image: mysql:5.7
+    environment:
+      - MYSQL_ROOT_PASSWORD=cleanarchitecturejava
+      - MYSQL_DATABASE=cleanarchitecturejava
+      - MYSQL_USER=cleanarchitecturejava
+      - MYSQL_PASSWORD=cleanarchitecturejava
+    expose:
+      - '3306'
+    ports:
+      - '3306:3306'
